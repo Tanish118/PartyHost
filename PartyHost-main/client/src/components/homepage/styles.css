@@ -1,0 +1,312 @@
+.hamburger_menu {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid black;
+  box-shadow: 1px 0px 5px;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  height: 100vh;
+  animation: slide-open 1s forwards;
+  z-index: 1;
+}
+.add_exp {
+  box-shadow: 1px 0px 5px;
+  background-color: white;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 15px;
+  margin: 100px;
+  padding: 20px;
+  margin-left: 300px;
+  position: absolute;
+}
+
+#center_alert,
+#center_alert2 {
+  padding: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 30vw;
+  position: absolute;
+  outline: none;
+  z-index: 100;
+  margin-left: 35vw;
+  margin-top: 25vh;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  height: 25vh;
+}
+#center_alert2 {
+  height: 35vh;
+  margin-top: 20vh;
+}
+.center_alert_input {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  outline: none;
+  width: 80%;
+  border: 0px;
+  background-color: rgb(211, 211, 211);
+  padding-left: 15px;
+  padding-right: 5px;
+  height: 30px;
+}
+.center_alert_input2 {
+  margin-top: 25px;
+  outline: none;
+  width: 40%;
+  margin-right: 10px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(211, 211, 211);
+  border: 0px;
+  padding-left: 15px;
+}
+.center_alert_input3 {
+  padding-left: 15px;
+  width: 87%;
+  outline: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(211, 211, 211);
+  border: 0px;
+}
+.center_alert_head {
+  outline: none;
+  font-size: 24px;
+}
+#close1,
+#close2 {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.center_alert_submit {
+  margin-top: 7px;
+  background-color: #e94646;
+  border: 0px;
+  padding: 10px;
+  color: #f1f1f1;
+  font-size: 15px;
+  outline: none;
+  border-radius: 90px;
+  width: 85%;
+  height: 40px;
+}
+
+.center_alert2_submit {
+  outline: none;
+  background-color: #e94646;
+  border: 0px;
+  padding: 5px;
+  color: #f1f1f1;
+  font-size: 15px;
+  border-radius: 40px;
+  margin-top: 10px;
+  margin-left: -6px;
+  width: 91%;
+  height: 37px;
+  cursor: pointer;
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 6vh;
+  margin-right: 6vw;
+}
+.username_button {
+  background: none;
+  width: 160px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.dropdown-content span {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content span:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+@keyframes slide-open {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+.hamburger_menu.close {
+  animation: slide-closed 0.5s forwards;
+}
+@keyframes slide-closed {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+.close_icon {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 100px;
+  top: 75px;
+  cursor: pointer;
+}
+.friends_list {
+  height: 55%;
+  margin-top: 2%;
+  width: 75%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.friends_name {
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.friends_icon {
+  border: 2px solid rgb(107, 105, 105);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  font-size: 40px;
+  color: gray;
+  padding: 10px;
+}
+.friends_icon2 {
+  border: 1px solid rgb(107, 105, 105);
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4%;
+  font-size: 20px;
+  color: gray;
+  padding: 8px;
+  padding-right: 10px;
+}
+.friends_info {
+  font-size: 25px;
+}
+.add_expense {
+  border: none;
+  outline: none;
+  background: #e75a5a;
+  border-radius: 30px;
+  padding: 18px;
+  width: 220px;
+  height: 55px;
+  font-size: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6vh;
+  width: 100%;
+}
+.hamburger_button {
+  margin-left: 70px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.hamburger_icon {
+  height: 25px;
+  width: 30px;
+  margin-left: -150px;
+}
+.home_button {
+  border: none;
+  outline: none;
+  background: lightgray;
+  border-radius: 30px;
+  padding: 0px;
+  width: 90px;
+  margin-right: 2%;
+  margin-left: 55%;
+}
+.about_button {
+  background: none;
+  border: none;
+  outline: none;
+  margin-right: 2%;
+  cursor: pointer;
+}
+.owes_you {
+  color: rgb(28, 190, 114);
+}
+.you_owe {
+  color: #e75a5a;
+}
+.settled_up {
+  color: gray;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  outline: none;
+}
